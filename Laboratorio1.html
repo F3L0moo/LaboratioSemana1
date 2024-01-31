@@ -3,41 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laboratorio 1</title>
     <style type="text/css">
         *{
             margin: auto;
+            background-color: aqua;
+            font-family: sans-serif;
         }
-        .contenedor{
-            display: flex;
+        h3{
+            background-color: whitesmoke;
+        }
+        p{
+            background-color: whitesmoke;
+            overflow: scroll;
+        }
+        p>b{
+            background-color: whitesmoke;
         }
         div{
-            font-family: sans-serif;
-            display: flex;
-            background-color: black;
+            display: block;
+            background-color: whitesmoke;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+
         }
-        div>p{
-            color: white;
+        table{
+            width: 100%;
+            border-collapse: collapse;
         }
-        div>table{
-            border: 5px;
-            border-color: white;
-            border-style: solid;
+        td{
+            background-color: whitesmoke;
         }
-        td>p{
-            color: white;
+        div>img{
+            width: 150px;
+        }
+        td, th {
+            border: 10px solid aqua; 
+            padding: 8px; 
         }
     </style>
 </head>
 <body>
-    <div class="contenedor">
-        <div><table>
-            <th>
-                <td><p>Hola</p></td>
-                <td><p>Mundo</p></td>
-            </th>
-        </table></div>
-        <div><p>Adios</p></div>
-    </div>
+    <table>
+        <tr>
+            <td style="display: flex; padding-right: 100px;">
+                <div><img src="imagenyo.jpeg"></div>
+                <div>
+                    <H3>Fernando Josue Lopez Moore</H3>
+                    <p><b>Edad:</b> 20 años<br><b>Sexo:</b> Masculino<br><b>Altura:</b> 1.70 metros</p>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <h3>Ingenieria en Sistemas</h3>
+                    <p><br>Un carrera en constante cambio y evolucion, adaptable a diferentes ambitos laborales, tanto industriales como ciencias humanas.<br> <br>Ingenieria en sistemas me gusta ya que es una carrera que se puede acoplar a diferentes medios,
+                        <br> tanto en busqueda de la solucion de procesos o problemas cotidianos como la optimizacion de estos mismos</p>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

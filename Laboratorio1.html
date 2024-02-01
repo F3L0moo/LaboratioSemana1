@@ -36,8 +36,13 @@
             padding: 30px; 
             text-align: center;
         }
-        div>img{
+        .cambioimagen{
             width: 150px;
+            transition: transform 0.3s ease;
+
+        }
+        .cambioimagen:hover{
+            transform: translate(10px, 10px);
         }
         thead{
             background-color: black;
@@ -61,7 +66,7 @@
     <table class="tablePrincipal">
         <tr>
             <td style="display: flex;">
-                <div><img src="imagenyo.jpeg"></div>
+                <div><img src="imagenyo.jpeg" class="cambioimagen" id="primagen"></div>
                 <div>
                     <H3>Fernando Josue Lopez Moore</H3>
                     <p><b>Edad:</b> 20 años<br><b>Sexo:</b> Masculino<br><b>Altura:</b> 1.70 metros</p>
@@ -159,8 +164,16 @@
             </td>
         </tr>
     </table>
-    <div>
-
-    </div>
+    <script>
+        const imagen1 = document.getElementById('primagen');
+        imagen1.addEventListener('mouseover', ()=> {
+            imagen1.src = 'Imagen2.png'
+        });
+        
+        imagen1.addEventListener('mouseout', ()=> {
+            imagen1.src = 'imagenyo.jpeg'
+        });
+        
+    </script>
 </body>
 </html>

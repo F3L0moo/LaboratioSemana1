@@ -7,22 +7,20 @@
     <style type="text/css">
         *{
             margin: auto;
-            background-color: rgb(150, 203, 214);
             font-family: sans-serif;
         }
-        h3{
-            background-color: whitesmoke;
+        a{
+            text-decoration: none;
+            color: white;
         }
+        body{
+            background-color: rgb(150, 203, 214);
+        }   
         p{
-            background-color: whitesmoke;
             overflow: scroll;
-        }
-        p>b{
-            background-color: whitesmoke;
         }
         div{
             display: block;
-            background-color: whitesmoke;
             width: 100%;
             align-items: center;
             text-align: center;
@@ -34,27 +32,42 @@
         }
         td{
             background-color: whitesmoke;
+            border: 30px solid rgb(150, 203, 214); 
+            padding: 30px; 
+            text-align: center;
         }
         div>img{
             width: 150px;
         }
-        td, th {
-            border: 10px solid rgb(150, 203, 214); 
-            padding: 8px; 
+        thead{
+            background-color: black;
+            color: white;
+            
+        }
+        th{
+            color: white;
+            border: 1px solid black; 
+        }
+        .bajo>th{
+            background-color: white;
+            color: black;
+        }
+        .bajo>a{
+            color: black;
         }
     </style>
 </head>
 <body>
-    <table>
+    <table class="tablePrincipal">
         <tr>
-            <td style="display: flex; padding-right: 100px;">
+            <td style="display: flex;">
                 <div><img src="imagenyo.jpeg"></div>
                 <div>
                     <H3>Fernando Josue Lopez Moore</H3>
                     <p><b>Edad:</b> 20 años<br><b>Sexo:</b> Masculino<br><b>Altura:</b> 1.70 metros</p>
                 </div>
             </td>
-            <td>
+            <td colspan="2">
                 <div>
                     <h3>Ingenieria en Sistemas</h3>
                     <p><br>Un carrera en constante cambio y evolucion, adaptable a diferentes ambitos laborales, tanto industriales como ciencias humanas.<br> <br>Ingenieria en sistemas me gusta ya que es una carrera que se puede acoplar a diferentes medios,
@@ -62,6 +75,92 @@
                 </div>
             </td>
         </tr>
+        <tr>
+            <td>
+                <h1>LIBROS<br><br></h1>
+                <ul>
+                    <li>Ready player One</li>
+                    <li>Bobby Fischer enseña ajedrez, de Bobby Fischer, <br>Stuart Margulies and Don Mosenfelder.</li>
+                    <li>Un vampiro en pijama</li>
+                    <li>Mein Kampf</li>
+                </ul>
+            </td>
+            <td>    
+                <h1>HOBBIES<br><br></h1>
+                <ul>
+                    <li>Jugar videojuegos</li>
+                    <li>Aprender Ajedrez</li>
+                    <li>Buscar informacion y datos random</li>
+                    <li>Salir con amigos</li>
+                </ul>
+            </td>
+            <td>
+                <h1>SITIOS WEB</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>URL sitio Web</th>
+                            <th>Nombre</th>
+                            <th>Puntaje</th>
+                        </tr>
+                        <tr class="bajo">
+                            <th>
+                                <p><a href="https://www.youtube.com" style="color: black;">https://www.youtube.com</a></p>
+                            </th>
+                            <th>
+                                <p>Youtube</p>
+                            </th>
+                            <th>
+                                <div class="puntuacion">
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                  </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p><a href="https://www.chess.com">https://www.chess.com</a></p>
+                            </th>
+                            <th>
+                                <p>Chess.com</p>
+                            </th>
+                            <th>
+                                <div class="puntuacion">
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                  </div>
+                            </th>
+                        </tr>
+                        <tr class="bajo">
+                            <th>
+                                <p><a href="https://www.netflix.com" style="color: black;">https://www.netflix.com</a></p>
+                            </th>
+                            <th>
+                                <p>Netflix</p>
+                            </th>
+                            <th>
+                                <div class="puntuacion">
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                  </div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </td>
+        </tr>
     </table>
+    <div>
+
+    </div>
 </body>
 </html>
